@@ -1,4 +1,4 @@
-package bjorn.mcp.utils;
+package bjorn.mcp.projectfilereader.utils;
 
 import com.bjornsmcpserver.model.ToInterpretFile;
 import org.slf4j.Logger;

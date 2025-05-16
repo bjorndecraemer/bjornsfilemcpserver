@@ -1,4 +1,4 @@
-package bjorn.mcp.utils;
+package bjorn.mcp.projectfilereader.utils;
 
 public class SchemaUtils {
     public static final String SCHEMA = """
@@ -7,6 +7,12 @@ public class SchemaUtils {
             "id": "urn:jsonschema:Operation",
             "properties" : {
                 "operation" : {
+                    "type": "string"
+                },
+                "fileName" : {
+                    "type": "string"
+                },
+                "fileContents" : {
                     "type": "string"
                 }
             }
