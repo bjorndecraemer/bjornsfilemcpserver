@@ -12,12 +12,18 @@ This project is a Java-based server application that uses the **Model Context Pr
 
 ## Project Structure
 - **`src/main/java/com/bjornsmcpserver/model/ToInterpretFile.java`**: Defines the `ToInterpretFile` record for file metadata.
-- **`src/main/java/bjorn/mcp/Main.java`**: Entry point for the application and MCP server setup.
-- **`src/main/java/bjorn/mcp/utils/FileUtils.java`**: Utility class for reading and processing files.
-- **`src/main/java/bjorn/mcp/utils/ConfigUtils.java`**: Utility class for loading and accessing configuration properties.
+- **`src/main/java/bjorn/mcp/projectfilereader/FileMcpService.java`**: Handles the MCP server setup and file processing logic.
+- **`src/main/java/bjorn/mcp/projectfilereader/utils/FileUtils.java`**: Utility class for reading and processing files.
+- **`src/main/java/bjorn/mcp/projectfilereader/utils/ConfigUtils.java`**: Utility class for loading and accessing configuration properties.
+- **`src/main/java/bjorn/mcp/projectfilereader/utils/SchemaUtils.java`**: Defines the schema used for MCP server tools.
 
 ## Configuration
-The project uses a `config.json` file located in the `resources` directory. Example configuration:
+The project uses a `config.json` file located in the `resources` directory. You can modify the following properties in this file:
+- **`serverName`**: The name of the MCP server.
+- **`serverVersion`**: The version of the MCP server.
+- **`allowedFileExtensions`**: A list of file extensions allowed for processing.
+
+Example `config.json`:
 ```json
 {
   "serverName": "BjornMCPServer",
