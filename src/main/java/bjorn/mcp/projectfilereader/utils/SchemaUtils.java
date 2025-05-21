@@ -8,12 +8,6 @@ public class SchemaUtils {
             "properties" : {
                 "operation" : {
                     "type": "string"
-                },
-                "fileName" : {
-                    "type": "string"
-                },
-                "fileContents" : {
-                    "type": "string"
                 }
             }
         }
